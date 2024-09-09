@@ -23,18 +23,18 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Bachelor's Degree</li>
+        <li>FLorida State University</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Qualifications",
+    id: "Qualifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Zero to Mastery Full Stack Web Developer's Course</li>
+        <li>Professional experience using Blender + React + Vite</li>
       </ul>
     ),
   },
@@ -57,11 +57,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
+            I am a full stack web developer as well as a practicing artist and creative with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
+            working with JavaScript, Java, React, SQL, Next.js Node.js, Express, PostgreSQL, HTML, CSS, and Git. I am a quick learner and I am always
+            looking to expand my knowledge and skill set. I am a team player and active community member.
             I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
@@ -80,11 +79,11 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("qualifications")}
+              active={tab === "qualifications"}
             >
               {" "}
-              Certifications{" "}
+              Qualifications{" "} 
             </TabButton>
           </div>
           <div className="mt-8">
